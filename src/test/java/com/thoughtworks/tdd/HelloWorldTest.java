@@ -17,10 +17,12 @@ public class HelloWorldTest {
 
     @BeforeAll
     static void initTestEnv() {
+    	
     }
 
     @BeforeEach
     void initEveryMethod() {
+    	
     }
 
 
