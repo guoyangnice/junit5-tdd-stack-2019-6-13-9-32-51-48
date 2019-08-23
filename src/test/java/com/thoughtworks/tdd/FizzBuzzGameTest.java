@@ -27,7 +27,7 @@ public class FizzBuzzGameTest {
 	}
 	
 	@Test
-	public void should_fizzBuzzAll_when_number_given_number() {
+	public void should_fizzBuzz_when_15_given_number() {
 		int number = 15;
 		//given
 		FizzBuzzGame fizzBuzzGame = new FizzBuzzGame();
@@ -35,6 +35,17 @@ public class FizzBuzzGameTest {
 		String word = fizzBuzzGame.getWords(number);
 		//then
 		Assertions.assertEquals("fizzBuzz", word);
+	}
+	
+	@Test
+	public void should_fizzBuzzWizz_when_315_given_number() {
+		int number = 315;
+		//given
+		FizzBuzzGame fizzBuzzGame = new FizzBuzzGame();
+		//when
+		String word = fizzBuzzGame.getWords(number);
+		//then
+		Assertions.assertEquals("fizzBuzzWizz", word);
 	}
 	
 }
